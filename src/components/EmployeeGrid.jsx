@@ -2,7 +2,7 @@ import EmployeeCard from './EmployeeCard'
 
 function EmployeeGrid({ employees }) {
   if (employees.length === 0) {
-    return <p className="empty">No employees yet 😢</p>
+    return <p className="empty">No employees yet.</p>
   }
 
   return (

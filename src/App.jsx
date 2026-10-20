@@ -37,7 +37,7 @@ function App() {
     <div className="app">
       <header className="header">
         <div>
-          <h1>👥 Employee Dashboard</h1>
+          <h1>Employee Dashboard</h1>
           {!loading && !error && <p className="count">{employees.length} employees</p>}
         </div>
         <button className="btn" onClick={() => setShowModal(true)}>
@@ -47,14 +47,12 @@ function App() {
 
       {loading && (
         <div className="status">
-          <div className="spinner"></div>
           <p>Loading employees...</p>
         </div>
       )}
 
       {!loading && error && (
         <div className="status error">
-          <p className="big-emoji">😵</p>
           <p>Oops! Something went wrong.</p>
           <p className="error-text">{error}</p>
           <button className="btn" onClick={loadEmployees}>

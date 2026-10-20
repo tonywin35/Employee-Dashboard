@@ -21,10 +21,10 @@ function EmployeeCard({ employee }) {
       <h3>{employee.name}</h3>
       <p className="username">@{employee.username}</p>
       <div className="card-info">
-        <p>📧 {employee.email}</p>
-        {employee.phone && <p>📞 {employee.phone}</p>}
-        {employee.address?.city && <p>📍 {employee.address.city}</p>}
-        {employee.company?.name && <p>🏢 {employee.company.name}</p>}
+        <p><strong>Email:</strong> {employee.email}</p>
+        {employee.phone && <p><strong>Phone:</strong> {employee.phone}</p>}
+        {employee.address?.city && <p><strong>City:</strong> {employee.address.city}</p>}
+        {employee.company?.name && <p><strong>Company:</strong> {employee.company.name}</p>}
       </div>
     </div>
   )
